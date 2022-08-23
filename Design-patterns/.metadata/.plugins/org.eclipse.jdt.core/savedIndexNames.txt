@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Swabhav-Training-Repo\Design-patterns\.metadata\.plugins\org.eclipse.jdt.core
+4271783909.index
+2978121735.index
+3771750724.index

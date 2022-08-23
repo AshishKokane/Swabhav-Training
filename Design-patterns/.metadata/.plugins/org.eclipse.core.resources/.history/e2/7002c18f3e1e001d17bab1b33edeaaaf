@@ -1,0 +1,44 @@
+package com.aurionpro.model;
+
+public class Atc implements IAtc {
+	
+	private Runway runway;
+	private Flight flight;
+	public Boolean available;
+
+	@Override
+	public void registerFlight(Flight flight) {
+		this.flight = flight;
+	}
+
+	@Override
+	public void registerRunway(Runway runway) {
+	this.runway = runway;
+
+	}
+
+	@Override
+	public void setAvailabilityStatusofRunway(Boolean status) {
+		this.available = status;
+
+	}
+
+	@Override
+	public Boolean isAvailableRunway() {
+		
+		return available;
+	}
+
+	@Override
+	public String toString() {
+		return "Atc [runway=" + runway + ", available=" + available + "]";
+	}
+
+
+
+
+
+	
+	
+	
+}

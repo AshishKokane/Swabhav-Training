@@ -1,0 +1,43 @@
+package com.aurionpro.model;
+
+public class StringUtil {
+
+	String truncateAInFirst2Place(String str) {
+
+		StringBuilder sb = new StringBuilder(str);
+
+		if (sb.charAt(0) == 'a') {
+			sb.deleteCharAt(0);
+
+		}
+
+		if (sb.charAt(1) == 'a') {
+			sb.deleteCharAt(1);
+		}
+		
+		if(str.subSequence(0, 2).equals("aa")) {
+			return str.substring(2);
+		}
+		
+		
+		
+		
+		return sb.toString();
+
+	}
+	
+	
+	Boolean checkFirstandLast2Equal(String str) {
+
+	
+
+		if (str.subSequence(0, 2).equalsIgnorecase(str.subSequence(str.length()-2, str.length()))) {
+			return true;
+
+		}
+		return false;
+
+	
+	}
+
+}

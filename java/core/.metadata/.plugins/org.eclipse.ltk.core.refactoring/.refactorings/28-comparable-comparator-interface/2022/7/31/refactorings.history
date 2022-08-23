@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ConsoleColors.java&apos; to &apos;62-thread-executor-synch/src/com.aurionpro.test&apos;&#x0D;&#x0A;- Original project: &apos;28-comparable-comparator-interface&apos;&#x0D;&#x0A;- Destination element: &apos;62-thread-executor-synch/src/com.aurionpro.test&apos;&#x0D;&#x0A;- Original element: &apos;com.aurionpro.model.ConsoleColors.java&apos;" description="Copy compilation unit" destination="=62-thread-executor-synch/src&lt;com.aurionpro.test" element1="/src&lt;com.aurionpro.model{ConsoleColors.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1658733890439" units="1" version="1.0"/>
+</session>

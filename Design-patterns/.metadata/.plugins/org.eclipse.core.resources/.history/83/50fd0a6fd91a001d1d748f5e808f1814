@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class Runway implements ICommand {
+
+	@Override
+	public void land() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

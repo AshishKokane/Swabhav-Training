@@ -1,0 +1,13 @@
+package com.aurionpro.model;
+
+public class Runway implements ICommand {
+	
+	private IAtc atcMediator;
+
+	@Override
+	public void land() {
+	
+		
+	}
+
+}

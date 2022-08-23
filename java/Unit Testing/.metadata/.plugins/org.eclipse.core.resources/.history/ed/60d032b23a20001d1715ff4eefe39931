@@ -1,0 +1,39 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class ProductTest {
+	
+	
+	Product procuct = new Product(101, "phone", 20000, 0);
+	Product procuct1 = new Product(101, "phone", 10000, 5);
+
+@	Disabled
+	@Test
+	@DisplayName("price with no discount on 20000")
+	void testpriceWithoutDiscount() {
+		double Expected = 20000.0;
+		double Actual = procuct.calculatePriceAfterDiscount();
+
+		assertEquals(Expected, Actual);
+	}
+	
+	@Test
+	@DisplayName("price with 5% discount on 10000")
+	void testpriceWithDiscount() {
+		double Expected = 500.0;
+		double Actual = procuct1.calculatePriceAfterDiscount();
+
+		assertEquals(Expected, Actual);
+	}
+	
+	
+	
+}

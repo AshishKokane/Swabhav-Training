@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public interface IAtc {
+
+	public void registerFlight(Flight flight);
+	public void registerRunway(Runway runway);
+	public void setAvailabilityStatusofRunway(Boolean status);
+	public Boolean isAvailableRunway();
+}

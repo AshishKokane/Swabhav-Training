@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;3-dependency-inverion&apos; to &apos;3-dependency-inverion-solution&apos;" description="Rename resource &apos;3-dependency-inverion&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/3-dependency-inverion" name="3-dependency-inverion-solution" stamp="1659516269319" updateReferences="true"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.aurionpro.model.Reactangle&apos; to &apos;Reactanglee&apos;&#x0D;&#x0A;- Original project: &apos;67-ocp-areaCalculate&apos;&#x0D;&#x0A;- Original element: &apos;com.aurionpro.model.Reactangle&apos;&#x0D;&#x0A;- Renamed element: &apos;com.aurionpro.model.Reactanglee&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Reactangle&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.aurionpro.model{Reactangle.java[Reactangle" matchStrategy="1" name="Reactanglee" qualified="false" references="true" similarDeclarations="false" stamp="1659355478607" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,17 @@
+package com.aurionpro.model;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class ProductTest {
+	
+	
+	Product procuct;
+
+	@BeforeAll
+	void testBeforeAll() {
+		 procuct = new Product(101, "pen", 20, 5);
+	}
+
+}

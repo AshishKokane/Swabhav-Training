@@ -1,0 +1,38 @@
+package com.aurionpro.model;
+
+public class Board {
+
+	private Cell[] cells = new Cell[9];
+
+	public Board() {
+
+		for (int i = 0; i < 9; i++) {
+
+			try {
+				
+				cells[i].setMark(MarkType.EMPTY);
+			} catch (Exception e) {
+		System.out.println(e);
+			}
+
+		}
+	}
+
+	boolean isBoardFull() {
+
+		int count = 0;
+		for (Cell c : cells) {
+			if (c.getMark() == MarkType.EMPTY) {
+				count++;
+			}
+		}
+
+		if (count == 8) {
+			return true;
+		}
+
+		return false;
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.aurionpro.model;
+
+public class Flight implements ICommand{
+	
+	private IAtc atcMediator;
+
+	public Flight(IAtc atcMediator) {
+		super();
+		this.atcMediator = atcMediator;
+	}
+
+	@Override
+	public void land() {
+		if(atcMediator.isAvailableRunway()) {
+			System.out.println("Landed Successfully");
+			atcMediator.setAvailabilityStatusofRunway(false); // runway is occupied
+		}
+		
+		else {
+			System.out.println("Waiting for runway");
+		}
+		
+	}
+
+}

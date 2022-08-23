@@ -1,0 +1,25 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+
+public class MathUtilTest {
+
+
+MathUtil util = new MathUtil();
+
+@Test
+void test() {
+//	System.out.println("hi");
+	fail("this test failed");
+}
+
+ 
+@Test
+
+
+}

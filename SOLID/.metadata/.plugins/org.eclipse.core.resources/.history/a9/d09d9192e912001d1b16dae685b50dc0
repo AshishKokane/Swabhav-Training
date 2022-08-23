@@ -1,0 +1,34 @@
+package com.aurionpro.model;
+
+public class WorkerTest {
+
+	public static void main(String[] args) {
+		try {
+			IWorker manager = new Manager();
+			IWorker robot = new Robot();
+			
+			atTheWorkStation(manager);
+			atTheCanteen(manager);
+			
+			atTheWorkStation(robot);
+			atTheCanteen(robot);
+			
+			
+		
+		} catch (robotEatsException e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+	public static void atTheCanteen(IWorker worker) {
+		
+		
+	}
+
+	public static   void atTheWorkStation(IWorker manager) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

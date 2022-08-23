@@ -1,0 +1,12 @@
+package com.aurionpro.model;
+
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance
+public class MathUtilTest {
+
+MathUtil obj1= new MathUtil();
+@Test
+
+ 
+}

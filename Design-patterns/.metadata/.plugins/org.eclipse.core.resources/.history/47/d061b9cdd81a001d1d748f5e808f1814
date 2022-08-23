@@ -1,0 +1,29 @@
+package com.aurionpro.model;
+
+public class Atc implements IAtc {
+
+	@Override
+	public void registerFlight(Flight flight) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void registerRunway(Runnable runway) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void setAvailabilityStatusofRunway(Boolean status) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Boolean isAvailableRunway() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

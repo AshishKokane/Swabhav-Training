@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public class cellAlreadyMarkedException extends Exception {
+
+	public cellAlreadyMarkedException(String string) {
+		super(string);
+	}
+
+}

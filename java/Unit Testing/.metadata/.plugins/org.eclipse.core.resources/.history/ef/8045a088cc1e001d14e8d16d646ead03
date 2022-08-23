@@ -1,0 +1,32 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+
+public class StringUtilTest {
+
+	StringUtil util = new StringUtil();
+	
+
+	@Test
+	@DisplayName("String truncate a a equals")
+	void testTruncateAInFirst2Place() {
+String Expected = "BC";
+String Actual = util.truncateAInFirst2Place("abc").toUpperCase();
+
+assertEquals(Expected, Actual);
+	}
+
+}

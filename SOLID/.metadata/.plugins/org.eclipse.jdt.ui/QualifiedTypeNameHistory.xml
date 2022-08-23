@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.aurionpro.model.robotEatsException"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Manager"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.IWorker"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.IEatable"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Robot"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.IWorkable"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.IProduct"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.DvD"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.VarAgrs"/>
+<fullyQualifiedTypeName name="java.lang.StrictMath"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.A"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.B"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Shelf"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Book"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.TaxCalulator"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.LogType"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.ILogger"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.FileLogger"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.DBLogger"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.ServerLog"/>
+</qualifiedTypeNameHistroy>

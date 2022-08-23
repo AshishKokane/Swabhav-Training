@@ -1,0 +1,85 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class BoardTest {
+
+	Board board;
+	Board board1;
+
+	@BeforeEach
+	void test() {
+		board = new Board();
+		board1 = new Board();
+
+	}
+
+	@Test
+	@DisplayName("empty board created all cell empty ")
+	void testCreateBoard_allNineCellAreEmplty() {
+		boolean expected = false;
+		boolean actual = board1.isBoardFull();
+		assertEquals(expected, actual);
+
+	}
+
+	@Test
+	@DisplayName("mark at specific location")
+	void testsetCellMark_ableToMarkAtSpecificLocation() throws InvalidCellLocation {
+
+		board1.setCellMark(0, MarkType.X);
+		Cell[] expected = board1.getCells();
+
+		board.setCellMark(0, MarkType.X);
+		Cell[] actual = board.getCells();
+		
+		
+	 
+		assertEquals(MarkType.X, actual[0]);
+		
+
+		
+		assertArrayEquals(expected, actual);
+
+	}
+
+	@Test
+	void testCreateBoard_allNineCellAreFull() throws InvalidCellLocation {
+
+		for (int i = 0; i < 9; i++) {
+			board1.setCellMark(i, MarkType.O);
+		}
+
+		boolean expected = true;
+		boolean actual = board1.isBoardFull();
+		assertEquals(expected, actual);
+
+	}
+
+	@Test
+	void testSetCellMark_throwsInvalidLocationExceptionForInvalidCellLocation() {
+
+		assertThrows(InvalidCellLocation.class, () -> {
+			board.setCellMark(20, MarkType.X);
+		});
+	}
+
+	@Test
+	void testSetCellMark_throwsCellAlreadyMarkedExceptionIfCellMarkedTwice() throws InvalidCellLocation {
+		board.setCellMark(0, MarkType.O);
+		assertThrows(cellAlreadyMarkedException.class, () -> {
+			board.setCellMark(0, MarkType.X);
+		});
+	}
+
+}

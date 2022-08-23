@@ -1,0 +1,37 @@
+package com.aurionpro.test;
+
+import java.util.StringTokenizer;
+
+public class StringTokenTest {
+
+	public static void main(String[] args) {
+
+		String sample = "hi, how;are you 123 sample";
+
+		int counter1 = 0;
+		StringTokenizer stringTokens = new StringTokenizer(sample, ",; ");// delimiters are not tokens
+
+		System.out.println("Tokens count Token = " + stringTokens.countTokens());
+		while (stringTokens.hasMoreTokens()) {
+
+			System.out.println(stringTokens.countTokens() + "Token counter:: "+stringTokens.nextToken() );
+			//System.out.println(stringTokens.nextToken());
+
+			counter1 += 1;
+		}
+
+		System.out.println("Tokens count Token = " + stringTokens.countTokens());
+
+		System.out.println("Tokens= " + counter1);
+
+		System.out.println("---------------");
+
+		StringTokenizer str_arr = new StringTokenizer("hii, how, are, you", " ,");
+
+//		while (str_arr.hasMoreTokens())
+//			System.out.println(str_arr.nextToken());
+
+		// System.out.println("Total number of Tokens: " + str_arr.countTokens());
+
+	}
+}

@@ -1,0 +1,20 @@
+package com.aurionpro.model;
+
+public class Game {
+
+	private Player currentPlayer;
+	Player[] players;
+	Board board;
+	ResultAnalyzer analyzer;
+	ResultType result = ResultType.PROGRESS;
+
+	public Game(Player currentPlayer, Player[] players, Board board, ResultAnalyzer analyzer, ResultType result) {
+		super();
+		this.currentPlayer = currentPlayer;
+		this.players = players;
+		this.board = board;
+		this.analyzer = analyzer;
+		this.result = result;
+	}
+
+}

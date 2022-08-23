@@ -1,0 +1,7 @@
+package com.aurionpro.model;
+
+public class Snippet {
+	public void startEat();
+	public void stopEat();
+}
+

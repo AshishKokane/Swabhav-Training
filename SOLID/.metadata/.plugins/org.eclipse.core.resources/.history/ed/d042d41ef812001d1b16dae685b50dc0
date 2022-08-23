@@ -1,0 +1,26 @@
+package com.aurionpro.model;
+
+public class A {
+	
+	private String name = "ashish";
+	
+	
+	void displayName() {
+		System.out.println(name);
+	}
+
+
+	public void display() {
+		System.out.println(name);
+		
+	}
+	
+	
+	
+	//The data members, class or methods which are not declared
+	//using any access modifiers i.e. 
+	//having default access modifier are accessible only within the same package.
+	
+	
+
+}

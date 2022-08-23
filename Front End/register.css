@@ -1,0 +1,46 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+/* 
+    https://color.adobe.com/create/image */
+    background: linear-gradient(66deg,#00010D 10%, #424659 15%, #535563 30%, #0B1C40 30%, #071526 20%);
+  
+flex-direction: row-reverse;
+justify-content: space-around;
+color: #777A8C;
+/* background-image: url("img6.jpg"); */
+
+}
+
+.parent{
+ flex-basis: 450px;
+ 
+    opacity: 1;
+   
+
+ 
+
+    
+}
+
+
+.child1{
+  flex-basis: 500px;
+  
+
+}
+.ch{
+  
+   
+    opacity: 1;
+  
+  }
+
+  .carousel{
+    width: 600px;
+    height: 600px;
+
+  }
+  

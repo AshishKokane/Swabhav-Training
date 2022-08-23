@@ -1,0 +1,37 @@
+package com.aurionpro.model;
+
+public class TaxCalulator {
+
+	LogType logger;
+
+	public TaxCalulator(LogType logger) {
+		super();
+		this.logger = logger;
+	}
+	
+public double calculateTax(int amount, int taxRate) {
+	
+	try {
+		double tax = 0;
+		tax = amount/taxRate;
+	} catch (Exception e) {
+		if(logger==logger.DB) {
+			new DBLogger().log("error message "+e);
+			
+		}
+		
+		if(logger==logger.FILE) {
+			new FileLogger().log("error message "+e);
+			
+		}
+		
+	}
+	
+	
+	
+	
+	return taxRate;
+	
+}
+	
+}

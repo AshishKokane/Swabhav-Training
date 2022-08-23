@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class Game {
+	
+	private Player currentPlayer;
+	Player[] players;
+	Board board;
+	ResultAnalyzer analyzer;
+	ResultType result = ResultType.PROGRESS;
+
+}

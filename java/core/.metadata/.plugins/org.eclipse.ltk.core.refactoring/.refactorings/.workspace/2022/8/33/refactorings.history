@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;inheritance-task&apos; to &apos;StrategyPattern&apos;" description="Rename resource &apos;inheritance-task&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/inheritance-task" name="StrategyPattern" stamp="1660137330508" updateReferences="true"/>
+</session>

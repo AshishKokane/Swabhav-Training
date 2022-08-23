@@ -1,0 +1,18 @@
+package com.aurionpro.model;
+
+public class WorkerTest {
+
+	public static void main(String[] args) {
+		try {
+			IWorker manager = new Manager();
+			IWorker robot = new Robot();
+			
+			
+		
+		} catch (robotEatsException e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

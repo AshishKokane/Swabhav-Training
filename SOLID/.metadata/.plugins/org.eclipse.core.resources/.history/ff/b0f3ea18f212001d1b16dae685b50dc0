@@ -1,0 +1,25 @@
+package com.aurionpro.model;
+
+public class VarAgrs {
+	
+	 public int sumNumber(int ... args){
+	        System.out.println("argument length: " + args.length);
+	        int sum = 0;
+	        for(int x: args){
+	            sum += x;
+	        }
+	        return sum;
+	    }
+	 
+	 
+	// incorrect method declaration
+
+	 public void doSomething(int ... nums, int p){
+	     // method body
+	 }
+	 
+	 public void doSomething(int p, int ... nums) {
+		    // method body
+		}
+
+}

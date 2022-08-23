@@ -1,0 +1,7 @@
+package com.aurionpro.model;
+
+public class Board {
+
+	private Cell[] cells = new Cell[9];
+	
+}

@@ -1,0 +1,12 @@
+package com.aurionpro.model;
+
+public class Board {
+
+	private Cell[] cells = new Cell[9];
+
+	public Board(Cell[] cells) {
+		super();
+		this.cells = cells;
+	}
+
+}

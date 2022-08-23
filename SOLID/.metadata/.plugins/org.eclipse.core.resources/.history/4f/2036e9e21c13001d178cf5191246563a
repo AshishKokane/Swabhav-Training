@@ -1,0 +1,13 @@
+package com.aurionpro.model;
+
+public class TaxCalulator {
+
+	LogType logger;
+
+	public TaxCalulator(LogType logger) {
+		super();
+		this.logger = logger;
+	}
+	
+
+}

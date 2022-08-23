@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class ServerLog implements ILogger {
+
+	@Override
+	public void logs(String err) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.aurionpro.model;
+
+public class VarAgrs {
+	
+	 public int sumNumber(int ... args){
+	        System.out.println("argument length: " + args.length);
+	        int sum = 0;
+	        for(int x: args){
+	            sum += x;
+	        }
+	        return sum;
+	    }
+	 
+	 
+	// incorrect method declaration
+
+	 public void doSomething(int ... nums, int p){
+	     // method body
+	 }
+	 
+	 public void doSomething(int p, int ... nums) {
+		    // method body
+		// The Java compiler assigns the first argument to p, 
+		 //and the remaining int arguments are assigned to nums.
+		}
+	 
+	public int doSomething(int p, float ... floatNums, double ... doubleNums) {
+		    // . A method can have only one varargs parameter. 
+		}
+
+}

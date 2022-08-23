@@ -1,0 +1,68 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.ClassOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.TestMethodOrder;
+
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestMethodOrder(OrderAnnotation.class);
+
+public class CellTest {
+
+	Cell cell = new Cell(MarkType.EMPTY);
+
+
+	
+	@Test
+	@DisplayName("Created cell is Empty")
+	void testCreatedCellisEmpty() {		
+		boolean Expected = true;
+		boolean Actual =cell.isCellEmpty();
+		assertTrue(Expected==Actual);		
+	}
+		
+	@Test
+	@DisplayName("check if can mark O")
+	void testSetMark_checkIfCanMarkO() throws Exception {		
+		MarkType Expected = MarkType.O;
+		cell.setMark(MarkType.O);
+		MarkType Actual = cell.getMark();
+		assertTrue(Expected==Actual);
+
+	}
+
+	@Test
+	@DisplayName("check if can mark X")
+	void testSetMark_checkIfCanMarkX() throws Exception {		
+		MarkType Expected = MarkType.X;
+		cell.setMark(MarkType.X);
+		MarkType Actual = cell.getMark();
+		assertTrue(Expected==Actual);
+
+	}
+
+
+	@Disabled
+	@Test
+	@DisplayName("already marked exception twice")
+	void testSetMark_throwscellAlreadyMarkedExceptioWhenMarkedTwice() throws Exception {		
+	
+
+		
+		
+	}
+
+	
+	
+	
+	
+	
+}

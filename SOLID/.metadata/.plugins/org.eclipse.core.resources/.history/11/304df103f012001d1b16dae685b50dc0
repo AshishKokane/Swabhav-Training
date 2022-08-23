@@ -1,0 +1,15 @@
+package com.aurionpro.model;
+
+public class User {
+
+	public static void main(String[] args) {
+
+		Shelf sh = new Shelf();
+		IProduct book = new Book();
+		
+		
+		sh.addProduct(book);
+
+	}
+
+}

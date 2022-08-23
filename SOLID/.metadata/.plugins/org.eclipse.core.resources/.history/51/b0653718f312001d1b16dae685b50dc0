@@ -1,0 +1,54 @@
+package com.aurionpro.model;
+
+public class VarAgrs {
+	
+	 public int sumNumber(int ... args){
+	        System.out.println("argument length: " + args.length);
+	        int sum = 0;
+	        for(int x: args){
+	            sum += x;
+	        }
+	        return sum;
+	    }
+	 
+	 public void sumNumber (boolean p, float ... args){
+	        boolean negate = !p;
+	        System.out.println("negate = " + negate);
+	        System.out.println("args.length = "+ args.length);
+			return 0;
+	    }
+	 
+	 
+	// incorrect method declaration
+
+//	 public void doSomething(int ... nums, int p){
+//	     // method body
+//	 }
+	 
+	 public void doSomething(int p, int ... nums) {
+		    // method body
+		// The Java compiler assigns the first argument to p, 
+		 //and the remaining int arguments are assigned to nums.
+		}
+	 
+//	public int doSomething(int p, float ... floatNums, double ... doubleNums) {
+//		    // . A method can have only one varargs parameter. 
+//		}
+	
+	
+	
+	  
+	  static void test(int ... vargs) {
+	    // method body
+	  }
+	    
+	  static void test(int n, int ... vargs) {
+	    // method body
+	  }
+	  
+	  //The compiler doesn’t know which method to call. The compiler may think,
+	  //you are trying to call test(int ... vargs) with one varargs argument. Also, the compiler may think, 
+	  //you are trying to call test(int n, int ... vargs)
+	  //with argument passed to the first parameter with empty second parameter.
+
+}

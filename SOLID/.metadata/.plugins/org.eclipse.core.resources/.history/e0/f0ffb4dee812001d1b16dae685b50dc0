@@ -1,0 +1,28 @@
+package com.aurionpro.model;
+
+public class Robot implements IWorker {
+
+	@Override
+	public void startWork() {
+	System.out.println("Robot starts work....");
+		
+	}
+
+	@Override
+	public void stopWork() {
+		System.out.println("Robot stops work....");
+		
+	}
+
+	@Override
+	public void startEat() {
+		throw new robotEatsException("Robot can't eats") ;
+		
+		
+	}
+
+	@Override
+	public void stopEat() {
+		System.out.println("Robot stops eating ....");
+	}
+}

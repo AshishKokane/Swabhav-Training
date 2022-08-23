@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;60-Solid-principles&apos; to &apos;60-code-to-interface&apos;" description="Rename resource &apos;60-Solid-principles&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/60-Solid-principles" name="60-code-to-interface" stamp="1658316365984" updateReferences="true"/>
+</session>

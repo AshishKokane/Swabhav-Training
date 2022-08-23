@@ -1,0 +1,21 @@
+package com.aurionpro.model;
+
+public class Runway {
+
+	private AircraftMediator mediator;
+	private String name;
+
+	public Runway(AircraftMediator mediator, String Name) {
+		this.mediator = mediator;
+		this.name = Name;
+	}
+
+	public AircraftMediator getMediator() {
+		return mediator;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+}

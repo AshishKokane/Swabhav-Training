@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class StringUtil {
+	
+	String truncateAInFirst2Place(String str){
+		
+		return str;
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class BoardTest {
+
+	Board board = new Board();
+
+	@Test
+	@DisplayName("empty board created")
+	void testCreateBoard_allNineCellAreEmplty() {
+		boolean expected = true;
+		boolean actual = board.isBoardFull();
+		assertEquals(expected, actual);
+
+	}
+
+	@Test
+	@DisplayName("mark at specific location")
+	void testsetCellMark_ableToMarkAtSpecificLocation() {
+
+		Board board1 = new Board();
+		board1.setCellMark(0, MarkType.X);
+		Cell[] expected = board1.getCells();
+		
+		board.setCellMark(0, MarkType.X);
+		Cell[] actual = board.getCells();
+
+		 assertArrayEquals(expected, actual);
+
+	}
+}

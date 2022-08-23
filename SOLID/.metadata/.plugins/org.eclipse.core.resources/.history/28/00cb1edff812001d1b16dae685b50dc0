@@ -1,0 +1,20 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.A;
+
+public class TestAccessModifyer {
+
+	public static void main(String[] args) {
+		
+		A obj = new A();
+		//obj.displayName();
+		
+		obj.display();
+		
+		//obj.name = "abc";
+		
+		obj.displayPrivateMethod();
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.aurionpro.model;
+
+public class StringUtil {
+	
+	String truncateAInFirst2Place(String str){
+		
+		
+		   StringBuilder sb = new StringBuilder(str);
+		   
+	       
+	   
+	 
+	      
+	       if( sb.charAt(0) == 'a' && sb.charAt(1) =='a') {
+	    	   
+	    	   
+	       }
+	 
+	        // Converting StringBuilder into a string
+	        // and return the modified string
+	        return sb.toString();
+
+		
+		
+		
+		return str;
+		
+	}
+
+}

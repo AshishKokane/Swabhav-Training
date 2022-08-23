@@ -1,0 +1,16 @@
+package com.aurionpro.model;
+
+public class Shelf {
+	IProduct product;
+	
+	void addProduct(IProduct product) {
+		product.seeReviews();
+		product.getSample();
+	}
+	
+	   void customizeShelf() {
+	     System.out.println("your shelf is customized");
+	    }
+	
+
+}

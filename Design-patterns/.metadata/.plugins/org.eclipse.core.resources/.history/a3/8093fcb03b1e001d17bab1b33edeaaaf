@@ -1,0 +1,21 @@
+package com.aurionpro.model;
+
+public class Runway implements ICommand {
+
+	private IAtc atcMediator;
+
+
+	public Runway(IAtc atcMediator) {
+		super();
+		this.atcMediator = atcMediator;
+	}
+
+	@Override
+	public void land() {
+		System.out.println("RunWay available for landing.........");
+
+		atcMediator.setAvailabilityStatusofRunway(true);
+
+	}
+
+}

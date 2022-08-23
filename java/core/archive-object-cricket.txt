@@ -1,0 +1,226 @@
+package com.aurionpro.model;
+
+import java.util.Scanner;
+
+public class BookCricket {
+	public static int target=0;
+	public void PlayGame(Player[] players) {
+		
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		int playerNumber = 1, player1turn = 0, player1score = 0;
+
+		for (Player player : players) {
+
+			System.out.println("Welcome Player::" + player.getName());
+
+			System.out.println("Enter 1 To Start The Game and 0 to Exit");
+			int start = sc.nextInt();
+			if (start == 1) {
+				int n, points, turns = 0, score = 0;
+				String playe1Name = "";
+				if (playerNumber == 1) {
+					target=-1;
+					
+					playerNumber += 1;
+
+				}
+					
+					
+
+					playe1Name = player.getName();
+
+					do {
+
+						System.out.print("Press 1 to Open Book: ");
+
+						Scanner sc11 = new Scanner(System.in);
+						n = sc11.nextInt();
+
+						while (n != 1) {
+							System.out.println("Input not 1 game stopped. re-enter 1 to continue..");
+							n = sc11.nextInt();
+							break;
+						}
+
+						int a = (int) (Math.random() * (300 - 0 + 1) + 0);
+
+						points = a % 7;
+
+						if (points != 0) {
+							score = score + points;
+							turns++;
+							System.out.println("-----------------------");
+							System.out.println("Page Number: " + a);
+							System.out.println("Turn Score: " + points);
+							System.out.println("Total Score: " + score);
+							System.out.println("Round Number :" + turns);
+							System.out.println("-----------------------");
+
+							player.setRounds(turns);
+							player.setScore(score);
+
+						}
+
+						else {
+
+							turns++;
+							System.out.println("-----------------------");
+							System.out.println("Page Number: " + a);
+							System.out.println("Turn Score: " + points);
+							System.out.println("Total Score: " + score);
+							System.out.println("Round Number :" + turns);
+
+							System.out.println(" OOPS " + player.getName() + "  Out !!");
+							System.out.println("Target to win::" + (score + 1) + " Runs");
+							System.out.println("-----------------------------");
+
+							player.setRounds(turns);
+							player.setScore(score);
+
+							player1turn = turns;
+							player1score = score;
+
+							break;
+
+						}
+
+					} while (n == 1);
+
+				
+
+				
+
+//				else {
+//					// System.out.println("Player 1 score get score variable=" + player1score);
+//
+//					Player2Batting(player, player1turn, player1score, playe1Name);
+//				}
+
+			}
+
+			else {
+				System.out.println(" Game Exited !");
+				break;
+			}
+
+		}
+
+	}
+
+	private void Player2Batting(Player player, int player1Turns, int player1Score, String playe1Name) {
+
+		int n1 = 0, player2turn = 0, player2score = 0;
+		int points = 1;
+
+		do {
+
+			int a = (int) (Math.random() * (300 - 0 + 1) + 0);
+
+			points = a % 7;
+
+			if (points != 0 && player2score <= player1Score) {
+
+				System.out.print("Press 1 to Open Book: ");
+
+				Scanner sc = new Scanner(System.in);
+				n1 = sc.nextInt();
+
+				while (n1 != 1) {
+					System.out.println("Game stopped as input not 1 re-enter to continue...");
+					n1 = sc.nextInt();
+					break;
+				}
+
+				player2turn++;
+				player.setRounds(player2turn);
+				player2score = player2score + points;
+				player.setScore(player2score);
+
+				System.out.println("-----------------------");
+				System.out.println("Page Number: " + a);
+				System.out.println("Turn Score: " + points);
+				System.out.println("Total Score: " + player2score);
+				System.out.println("Round Number :" + player2turn);
+				System.out.println("-----------------------");
+
+				if (player2score > player1Score) {
+
+					// System.out.println("player 2 wins :-" + player.getName());
+					break;
+
+				}
+
+			}
+
+			if (points == 0)
+
+			{
+				System.out.println("-----------------------");
+				System.out.println("Page Number: " + a);
+				System.out.println("Turn Score: " + points);
+				System.out.println("Total Score: " + player2score);
+				System.out.println("Round Number :" + player2turn);
+				System.out.println(player.getName() + " OUT !!");
+				System.out.println("-----------------------");
+				break;
+			}
+		} while (n1 == 1);
+
+	}
+
+	public void printPlayer1Details(Player player1) {
+		System.out.println(" " + player1.getName() + " Wins");
+
+	}
+
+	public void printPlayer2Details(Player player2) {
+		System.out.println(" " + player2.getName() + " Wins");
+
+	}
+
+	public void getResult(Player[] players) {
+
+		System.out.println("--------------Match Statistics--------------");
+
+		for (Player player : players)
+
+		{
+			System.out.println(" Name : " + player.getName() + " Score : " + player.getScore() + " Turns : "
+					+ player.getRounds() + "-----------");
+		}
+
+		if (players[1].getScore() > players[0].getScore()) {
+
+			printPlayer1Details(players[1]);
+
+		}
+		if (players[0].getScore() > players[1].getScore()) {
+
+			printPlayer1Details(players[0]);
+
+		}
+
+		if (players[0].getScore() == players[1].getScore()) {
+
+			if (players[1].getRounds() > players[0].getRounds()) {
+
+				printPlayer1Details(players[0]);
+			}
+
+			else if (players[1].getRounds() < players[0].getRounds()) {
+
+				printPlayer1Details(players[1]);
+			}
+
+			else {
+				System.out.println("!! D R A W !!");
+			}
+
+		}
+
+	}
+
+}

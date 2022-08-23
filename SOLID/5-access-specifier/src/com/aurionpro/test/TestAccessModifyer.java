@@ -1,0 +1,30 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.A;
+import com.aurionpro.model.B;
+
+public class TestAccessModifyer {
+
+	public static void main(String[] args) {
+		
+		A obj = new A();
+		//obj.displayName();
+		
+		obj.display();
+		
+		
+		//obj.name = "abc";
+		
+		//obj.displayPrivateMethod();
+		
+		B obj2 = new B();
+		//obj2.name1;
+//		obj2.displayProtected();
+		
+		
+		
+		
+		//	//Note: We cannot declare classes or interfaces protected in Java.
+	}
+
+}

@@ -1,0 +1,50 @@
+body{
+    width: 800;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+ 
+   flex-direction: row;
+   flex-wrap: wrap;
+    /* background-color: black; */
+    
+  background-image: url("img6.jpg");
+
+  flex-direction: row-reverse;
+
+}
+.atag{
+  color:rgb(255, 217, 0);
+  font-weight: 400;
+  font-style: italic;
+}
+
+i{
+  color: antiquewhite;
+}
+
+.parent{
+  flex-basis:  400px;
+ 
+  color: aliceblue;
+  
+}
+
+.child1{
+  flex-basis:  800px;
+    /* flex-grow: 1; */
+
+}
+
+/* .ch{
+  
+  background-image: url("img6.jpg");
+  background-attachment: scroll;
+  object-fit:cover;
+  opacity: 1;
+} */
+
+
+
+

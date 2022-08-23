@@ -1,0 +1,18 @@
+package com.aurionpro.model;
+
+public class Flight implements ICommand{
+	
+	private IAtc atcMediator;
+
+	public Runway(IAtc atcMediator) {
+		super();
+		this.atcMediator = atcMediator;
+	}
+
+	@Override
+	public void land() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

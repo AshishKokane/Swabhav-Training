@@ -1,0 +1,26 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.VarAgrs;
+
+public class VarArgsTest {
+
+	public static void main(String[] args) {
+
+
+		VarAgrs varg = new VarAgrs();
+
+        int sum2 = varg.sumNumber(2, 4);
+        System.out.println("sum2 = " + sum2);
+
+        int sum3 = varg.sumNumber(1, 3, 5);
+        System.out.println("sum3 = " + sum3);
+
+ 
+        
+        int sum5 = varg.sumNumber(true, 1, 3);
+        
+        System.out.println("---------------------------------");
+
+	}
+
+}
